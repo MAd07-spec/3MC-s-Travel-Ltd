@@ -1,4 +1,26 @@
 [Date]: 04/11/2025
-[Name]: Meeting 1 Minutes
+[Name]: Meeting 1 Minutes (composed by Cristian)
+[Content]:
 
+Layout Planning:
+	1. The usage of a homepage was suggested and agreed upon by the group.
+	2. The addition of a topbar was suggested by Mehede and it was agreed upon by the group.
+	3. A few websites were suggested by members of the group for inspiration on certain features and the general layout
 
+Design Planning:
+	1. Cristian suggested a general theme for the entire website, Milan agreed with the idea so long each country would have its own mini-theme.
+	2. Homepage phrases suggested by Mishel. A vote was initiated in the Discord group chat
+	3. Mishel suggested having the homepage split into 4, with each section having an image represeting the country. Cristian and Mehede suggested having each image pop-out upon hovering however compatibility concerns were brought up regarding other devices.
+	4. Mishel will be making sample images to use for the website (adding text on publicly available photos of each country)
+
+Country:
+	1. wheelofnames.com was used to decide which person did which country's page
+	2. Cristian - Brazil, Milan - Japan, Mishel - Greece, Mehede - Italy
+
+Git Policies:
+	1. Each person will have their own branch, on which they will publish their local changes. Said branch will get merged with main upon mutual approval of other group members
+
+Future Meeting:
+	1. Library study room to be booked by Mehede on 11/11/25
+	2. The homepage phrases will be decided in the next meeting
+	3. There should be some work or ideas to show for the next meeting
