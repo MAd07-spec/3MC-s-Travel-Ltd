@@ -6,6 +6,7 @@
 .topnav {
     background-color: #f7f7f7;
     overflow: hidden;
+    align: right;
 }
 
 .topnav a {
@@ -15,6 +16,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    float: right;
 }
 
 .topnav a:hover {
