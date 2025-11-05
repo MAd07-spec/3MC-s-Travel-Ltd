@@ -1,0 +1,28 @@
+.html {
+    background-color: black;
+}
+
+/* Section for top navigational bar */
+.topnav {
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #edb9b9;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #f04343;
+    color: white;
+}
