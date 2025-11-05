@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Guide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+            gap: 2px;
+            background: #1e293b;
+        }
+        .region-card {
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .region-card:hover {
+            transform: scale(1.02);
+            z-index: 1;
+        }
+        .region-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .region-card:hover .region-img {
+            transform: scale(1.1);
+        }
+        .region-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        }
+        .region-title {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+        }
+        .region-desc {
+            margin: 0;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <a href="asia.html" class="region-card">
+            <img src="https://www.bugbog.com/wp-content/uploads/2023/08/d7ad5d2a9b8f3ab5/mount-fuji-japan.jpeg" alt="Asia" class="region-img">
+            <div class="region-content">
+                <h2 class="region-title">Asia</h2>
+                <p class="region-desc">Discover ancient temples, bustling cities, and serene landscapes.</p>
+            </div>
+        </a>
+
+        <a href="europe.html" class="region-card">
+            <img src="https://museumofwander.com/wp-content/uploads/2023/06/Depositphotos_55951727_XL-scaled.jpg" alt="Europe" class="region-img">
+            <div class="region-content">
+                <h2 class="region-title">Europe</h2>
+                <p class="region-desc">Experience rich history, diverse cultures, and stunning architecture.</p>
+            </div>
+        </a>
+
+        <a href="americas.html" class="region-card">
+            <img src="https://cdn-imgix.headout.com/tour/30357/TOUR-IMAGE/6cdcf542-452d-4897-beed-76cf68f154e4-1act-de005e04-05d9-4715-96b0-6a089d5c3460.jpg?auto=format&w=1222.3999999999999&h=687.6&q=90&ar=16%3A9&crop=faces&fit=crop" alt="Americas" class="region-img">
+            <div class="region-content">
+                <h2 class="region-title">Americas</h2>
+                <p class="region-desc">From natural wonders to vibrant cities across two continents.</p>
+            </div>
+        </a>
+
+        <a href="africa.html" class="region-card">
+            <img src="https://images.squarespace-cdn.com/content/v1/55ee34aae4b0bf70212ada4c/1549109671374-FX0JGC774V3YPRZ18XGZ/pyramids-2159286_1920.jpg" alt="Africa" class="region-img">
+            <div class="region-content">
+                <h2 class="region-title">Africa</h2>
+                <p class="region-desc">Safari adventures, ancient pyramids, and diverse wildlife await.</p>
+            </div>
+        </a>
+    </main>
+</body>
+</html>
