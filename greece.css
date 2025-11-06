@@ -25,14 +25,13 @@ body {
 }
 
 .overlay {
-  /* background-color: rgba(6, 0, 0, 0.5); */
+   /* background-color: rgba(6, 0, 0, 0.5); */
   padding: 2rem;
   text-align: center;
   color: #fff; 
-  /* border-radius: 10px */
+  border-radius: 10px;
   position: absolute;
-    right:  60%;
-
+  right: 60%;
 }
 
 .overlay h1 {
