@@ -1,0 +1,94 @@
+body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #4b2c2c;
+      background-color: #f5f0e8;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('japan title card.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #7a1717;
+    }
+
+    .hero-text {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(2px);
+      padding: 1rem 2rem;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #b03a3a;
+      margin-top: 0.5rem;
+    }
+
+    /* About Section */
+    .about {
+      padding: 3rem 10%;
+      background-color: #f5f0e8;
+    }
+
+    .about h2 {
+      font-size: 1.8rem;
+      color: #7a1717;
+    }
+
+    .about p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+      color: #4b2c2c;
+    }
+
+    /* Experiences Section */
+    .experiences {
+      text-align: center;
+      padding: 3rem 10%;
+      background-color: #f5f0e8;
+    }
+
+    .experiences h2 {
+      font-size: 1.8rem;
+      color: #7a1717;
+      margin-bottom: 2rem;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    .experience {
+      text-align: center;
+      max-width: 220px;
+    }
+
+    .experience img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .experience p {
+      margin-top: 0.8rem;
+      font-weight: 500;
+      color: #7a1717;
+    }
+   
