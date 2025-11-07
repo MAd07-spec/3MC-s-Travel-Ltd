@@ -12,7 +12,7 @@ body {
   background-color: #fdfdfd;
 }
 
-/* Hero section */
+/* background image */
 .hero {
   background-image: url(dubai.jpg);
 
@@ -104,3 +104,41 @@ footer {
     background-color: #f04343;
     color: white;
 }
+
+.experiences {
+      text-align: center;
+      padding: 3rem 10%;
+      background-color: #f5f0e8;
+}
+
+.experiences h2 {
+      font-size: 1.8rem;
+      color: #7a1717;
+      margin-bottom: 2rem;
+}
+
+.experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+
+ .experience {
+      text-align: center;
+      max-width: 220px;
+    }
+
+.experience img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .experience p {
+      margin-top: 0.8rem;
+      font-weight: 500;
+      color: #7a1717;
+    }
