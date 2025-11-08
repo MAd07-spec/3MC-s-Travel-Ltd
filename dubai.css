@@ -15,7 +15,6 @@ body {
 /* background image */
 .header {
   background-image: url(dubai.jpg);
-
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -105,40 +104,58 @@ footer {
     color: white;
 }
 
-.location-grid{
+.location-section {
       text-align: center;
-      padding: 3rem 10%;
-      background-color: #f5f0e8;
-}
+      padding: 2rem 10%;
+      background-color: #f5ecdf;
+    }
 
-.location-grid h2 {
-      font-size: 1.8rem;
-      color: #7a1717;
-      margin-bottom: 2rem;
-}
-
-.location-grid gird {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
+.location-grid {
+     display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
       justify-items: center;
-    }
+}
 
- .location-grid {
+.location {
+    text-align: center;
+    max-width: 220px;
+}
+
+.location-grid div {
+      background-color: rgb(219, 219, 219);
+      border: goldenrod solid 3px;
+      padding : 10px;
+      font-size: 20px;
       text-align: center;
-      max-width: 220px;
     }
 
- .location-grid img {
+ .location img {
       width: 100%;
       height: 140px;
       object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
     }
 
- .location-grid p {
+ .location p {
       margin-top: 0.8rem;
       font-weight: 500;
-      color: #7a1717;
+      color: #000000;
+ }
+
+ .location-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #963d02;
+    }
+
+.location img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+.location-grid div:hover {
+      background-color: #f0e1d2;
+      transform: scale(1.2)
     }
