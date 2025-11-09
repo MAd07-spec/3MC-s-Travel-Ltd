@@ -55,7 +55,7 @@ main {
 .about h2, .experiences h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #2980b9;
+  color: goldenrod;
 }
 
 .about p {
@@ -107,7 +107,7 @@ footer {
 .location-section {
       text-align: center;
       padding: 2rem 10%;
-      background-color: #f5ecdf;
+      background-color: #fcf1e2;
     }
 
 .location-grid {
@@ -124,7 +124,8 @@ footer {
 
 .location-grid div {
       background-color: rgb(219, 219, 219);
-      border: goldenrod solid 3px;
+      border: rgb(255, 255, 255) solid 3px;
+      box-shadow: goldenrod 0px 4px 8px;
       padding : 10px;
       font-size: 20px;
       text-align: center;
@@ -141,7 +142,7 @@ footer {
  .location p {
       margin-top: 0.8rem;
       font-weight: 500;
-      color: #000000;
+      color: #963d02;
  }
 
  .location-section h2 {
@@ -157,5 +158,73 @@ footer {
 
 .location-grid div:hover {
       background-color: #f0e1d2;
-      transform: scale(1.2)
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
     }
+.burjkaflia-content img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px goldenrod;
+    display: block;
+    margin: 1rem auto;
+    padding: 10px;
+}
+.burjkaflia-content img:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+.burjkaflia h2 {
+    padding : 1rem;
+   text-align: center;
+    color: goldenrod;
+    font-size: 2.5rem;
+  }
+
+.burjkaflia-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+
+.burjkaflia-content ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding : 20px;
+    text-align: absolute;
+}
+
+.burjkaflia {
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px goldenrod;
+  padding: 20px;
+  width: 1200px;
+  height: 930px;
+  margin: 0 auto 2rem auto;
+  position: relative;
+  top : 20px;
+}
+
+.burjkaflia-content h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding : 10px;
+    text-align: absolute;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+    width: 300px;
+    background-color: #fce3a5;
+    box-shadow: #000000 0px 4px 8px;
+} 
+.burjkaflia-content h3:hover {
+    background-color: #fdf07a;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
