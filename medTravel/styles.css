@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons and Actions */
+body {
+  background: #e8ebef;
+  font-family: Arial, sans-serif;
+}
+
+.festival-card {
+  width: 90%;
+  max-width: 1100px;
+  background: white;
+  border-radius: 22px;
+  margin: 30px auto;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.festival-header {
+  background: linear-gradient(90deg, #e4c300, #ff9900);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 22px 22px 0 0;
+}
+
+.festival-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.festival-body {
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+}
+
+.festival-img {
+  width: 50%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.festival-content {
+  width: 50%;
+}
+
+.festival-content h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.festival-content p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+
