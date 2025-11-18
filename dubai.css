@@ -111,6 +111,14 @@ footer {
     background-color: #f04343;
     color: white;
 }
+.video {
+    text-align: center;
+    padding: 2rem 10%;
+    background-color: #fcf1e2;
+    margin-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+}
 
 .location-section {
       text-align: center;
@@ -181,7 +189,7 @@ footer {
     padding: 10px;
 }
 .burjkaflia-content img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: transform 0.3s ease;
 }
 
@@ -251,7 +259,7 @@ footer {
     padding: 10px;
 }
 .desert-content img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: transform 0.3s ease;
 }
 
@@ -320,7 +328,7 @@ footer {
     padding: 10px;
 }
 .museum-content img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: transform 0.3s ease;
 }
 .museum h2 {
@@ -383,9 +391,10 @@ footer {
     display: block;
     margin: 1rem auto;
     padding: 10px;
+    z-index: 5;
 }
 .aquaventure-content img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: transform 0.3s ease;
 }
 .aquaventure h2 {
@@ -442,3 +451,4 @@ footer {
   text-align: center;
   padding: 2rem;
   background-color: #eee;
+}
