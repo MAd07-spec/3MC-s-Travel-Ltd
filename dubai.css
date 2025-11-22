@@ -111,13 +111,23 @@ footer {
     background-color: #f04343;
     color: white;
 }
-.video {
-    text-align: center;
-    padding: 2rem 10%;
-    background-color: #fcf1e2;
-    margin-bottom: 2rem;
-    height: 100%;
-    width: 100%;
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 .location-section {
