@@ -50,6 +50,7 @@ body {
     width: 100%;
     margin: auto;
     overflow: hidden;
+    display: inline-block;
 }
 
 .carousel .carousel-track {
@@ -66,5 +67,18 @@ body {
     border-radius: 10px;
 }
 
+/* Carousel Overlay Text */
+
+.carousel .overlaytext {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 25px;
+    font-size: 20px;
+    text-align: center;
+}
 
 
