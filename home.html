@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3MC Travels — Home</title>
+  <link rel="stylesheet" href="home.html" />
+</head>
+
+<body>
+  <div class="site">
+    <header class="topnav" role="banner">
+      <div class="brand">3MC Travels</div>
+      <nav class="navlinks" role="navigation" aria-label="Main">
+        <a href="brazil.html">Brazil</a>
+        <a href="dubai.html">Dubai</a>
+        <a href="japan.html">Japan</a>
+        <a href="italy.html">Italy</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-hidden="false">
+      <div class="carousel">
+        <img src="travelimg/rio.jpg" alt="Rio de Janeiro" class="carousel-img active">
+        <img src="travelimg/dubai.jpg" alt="Dubai" class="carousel-img">
+        <img src="travelimg/japan.jpg" alt="Japan" class="carousel-img">
+        <img src="travelimg/italy.jpg" alt="Italy" class="carousel-img">
+      </div>
+      <div class="hero-overlay">
+        <h1>Explore the world — guides, tips and highlights for Brazil, Dubai, Japan and Italy</h1>
+      </div>
+    </section>
+
+    <main>
+      <h2 style="margin:22px 0 12px">Choose a destination</h2>
+
+      <div class="grid" aria-label="Destination list">
+        <a class="card" href="brazil.html">
+          <img src="travelimg/rio.jpg" alt="Rio de Janeiro">
+          <h3>Brazil — Rio & beyond</h3>
+          <p>Beaches, rainforest, and carnival culture.</p>
+        </a>
+
+        <a class="card" href="dubai.html">
+          <img src="travelimg/dubai.jpg" alt="Dubai skyline">
+          <h3>Dubai — Modern Oasis</h3>
+          <p>Skyscrapers, desert adventures and luxury.</p>
+        </a>
+
+        <a class="card" href="japan.html">
+          <img src="travelimg/japan.jpg" alt="Japanese temple">
+          <h3>Japan — Tradition & Tech</h3>
+          <p>Temples, cities and seasonal beauty.</p>
+        </a>
+
+        <a class="card" href="italy.html">
+          <img src="travelimg/italy.jpg" alt="Italian coast">
+          <h3>Italy — Art & Cuisine</h3>
+          <p>History, food and coastal charm.</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>&copy; 2025 3MC Travels</small>
+    </footer>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-img');
+
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 5000); // change image every 5 seconds
+  </script>
+</body>
+</html>
