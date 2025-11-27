@@ -17,7 +17,7 @@ Design Planning:
 
 Country:
 	1. wheelofnames.com was used to decide which person did which country's page
-	2. Cristian - Brazil, Milan - Japan, Mishel - Greece, Mehede - Italy
+	2. Cristian - Italy, Milan - Japan, Mishel - Greece, Mehede - Brazil
 
 Git Policies:
 	1. Each person will have their own branch, on which they will publish their local changes. Said branch will get merged with main upon mutual approval of other group members
