@@ -165,18 +165,20 @@
 
 <!-- JavaScript for fade-in effect -->
   <script>
-    const items = document.querySelectorAll(".fade-in");
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    });
-
-    items.forEach(item => observer.observe(item));
-  </script>
+    const reveals = document.querySelectorAll(".reveal");
+  
+              const observer = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add("active");
+                  } else {
+                      entry.target.classList.remove("active"); 
+                  }
+                  });
+              }, { threshold: 0.2 }); // triggers nicer
+  
+              reveals.forEach(r => observer.observe(r));
+    </script>
 
    <!-- JavaScript for Carousel and Carousel Dots -->
     <script>
