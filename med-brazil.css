@@ -57,7 +57,7 @@ body {
 }
 
 .Front {
-  background-image: url("/travelimg/rio.jpg");
+  background-image: url("travelimg/rio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;   
