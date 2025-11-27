@@ -56,6 +56,14 @@ body {
     height: 60px; 
 }
 
+.Front {
+  background: url("travelimg/rio.jpg") center/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
 /*.Front {
   position: relative;
   width: 100%;
@@ -64,9 +72,8 @@ body {
   overflow: hidden;
 }*/
 
-.Front {
+/*.Front {
   position: relative;
-  /* force full-viewport width even when inside a centered .container */
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -76,6 +83,7 @@ body {
   max-width: none;
   z-index: 0;
 }
+
 
 /*.Front-img {
     position: absolute;
