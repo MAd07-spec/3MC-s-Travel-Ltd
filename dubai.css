@@ -111,7 +111,7 @@ footer {
     background-color: #f04343;
     color: white;
 }
-/* Style the video: 100% width and height to cover the entire window */
+
 #myVideo {
   position: absolute;
   right: 0;
@@ -121,13 +121,14 @@ footer {
 }
 
 /* Add some content at the bottom of the video/page */
+
 .content {
-  position: fixed;
-  bottom: 0;
+  position: relative;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  z-index: 1;
 }
 
 .location-section {
@@ -457,8 +458,39 @@ footer {
     transition: transform 0.3s ease;
 } 
 
+/* Audio */
+.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+.audio audio {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  background: linear-gradient(135deg, #e4c300, #ff9900);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  padding: 8px;
+  outline: none;
+}
+
+
 .footer {
   text-align: center;
   padding: 2rem;
   background-color: #eee;
+  position: relative;
+  z-index: 2;
 }
+
