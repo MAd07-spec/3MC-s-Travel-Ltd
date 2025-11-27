@@ -9,23 +9,25 @@
 
 <body>
    <!-- Navigation Bar -->
-     <div class="navbar">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#destinations">Destinations</a>
+    <div class="navbar">
+        <a class="active" href="home.html">Home</a>
+        <a href="japan.html">Japan</a>
+        <a href="dubai.html">UAE</a>
+        <a href="italy.html">Italy</a>
+        <a href="brazil.html">Brazil</a>
     </div>
+      
 
   <!-- Heading -->
   <section class="heading-section">
     <div class="heading">
-      <h1>Experience the Magic of Japan</h1>
+      <h1>Experience the Wonders of Japan
       <h2>The Land of the Rising Sun</h2>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="about-section fade-in">
+  <section class="about-video-section fade-in">
     <h2>About</h2>
     <p>
       Japan is a land of breathtaking landscapes, ancient temples, and vibrant culture.
@@ -33,53 +35,59 @@
       for every traveler. Discover the deep history, warm hospitality, and stunning scenery
       that make Japan a must-visit destination.
     </p>
+  <!-- Video -->
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="section-video">
+        <source src="media/JAPAN-CINEMATIC-1080P.mp4" type="video/mp4" />
+      </video>
+
+  <!-- Mute/Unmute Button -->
+     <button class="mute-button"></button>
+    </div>
   </section>
 
   <!-- Experiences Section -->
-  <section class="experiences-section">
+  <section class="experiences-section fade-in">
     <h2>Top Experiences in Japan</h2>
     <div class="experiences-grid">
 
       <div class="experiences">
         <a href="#temples">
-        <img src="japanese-temple.jpg" alt="Ancient Temple">
+        <img src="media/japanese-temple.jpg" alt="Ancient Temple">
       </a>
         <p>Visit Ancient Temples</p>
       </div>
 
       <div class="experiences">
         <a href="#mountfuji">
-        <img src="mount-fuji.jpg" alt="Mount Fuji">
+        <img src="media/mount-fuji.jpg" alt="Mount Fuji">
         </a>
         <p>Admire Mount Fuji</p>
       </div>
 
       <div class="experiences">
         <a href="#tokyo">
-        <img src="tokyo-city.jpg" alt="Tokyo City">
+        <img src="media/tokyo-city.jpg" alt="Tokyo City">
         </a>
         <p>Explore Tokyo</p>
       </div>
 
       <div class="experiences">
         <a href="#landscape">
-        <img src="landscape.jpg" alt="Scenic Landscape">
+        <img src="media/landscape.jpg" alt="Scenic Landscape">
         </a>
         <p>Witness Scenic Landscapes</p>
       </div>
     </div>
   </section>
 
- <!-- Divider -->
-  <div class="divider"></div>
-
  <!-- Temple Section-->
   <section id="temples" class="fade-in content-section">
     <div class="section-container left-image">
       <div class="carousel">
-        <img src="japanese-temple2.jpg" alt="Japanese Temple 2" class="carousel-img active">
-        <img src="japanese-temple3.jpg" alt="Japanese Temple 3" class="carousel-img">
-        <img src="japanese-temple4.jpg" alt="Japanese Temple 4" class="carousel-img">
+        <img src="media/japanese-temple2.jpg" alt="Japanese Temple 2" class="carousel-img active">
+        <img src="media/japanese-temple3.jpg" alt="Japanese Temple 3" class="carousel-img">
+        <img src="media/japanese-temple4.jpg" alt="Japanese Temple 4" class="carousel-img">
         <div class="carousel-dots"></div>
       </div>
       <div class="section-text">
@@ -105,9 +113,9 @@
         </p>
       </div>
       <div class="carousel">
-        <img src="mount-fuji2.jpg" alt="Mount Fuji 2" class="carousel-img active">
-        <img src="mount-fuji3.jpg" alt="Mount Fuji 3" class="carousel-img">
-        <img src="mount-fuji4.jpg" alt="Mount Fuji 4" class="carousel-img">
+        <img src="media/mount-fuji2.jpg" alt="Mount Fuji 2" class="carousel-img active">
+        <img src="media/mount-fuji3.jpg" alt="Mount Fuji 3" class="carousel-img">
+        <img src="media/mount-fuji4.jpg" alt="Mount Fuji 4" class="carousel-img">
         <div class="carousel-dots"></div>
       </div>
     </div>
@@ -117,9 +125,9 @@
   <section id="tokyo" class="fade-in content-section">
     <div class="section-container left-image">
       <div class="carousel">
-        <img src="tokyo-city2.jpg" alt="Tokyo City 2" class="carousel-img active">
-        <img src="tokyo-city3.jpg" alt="Tokyo City 3" class="carousel-img">
-        <img src="tokyo-city4.jpg" alt="Tokyo City 4" class="carousel-img">
+        <img src="media/tokyo-city2.jpg" alt="Tokyo City 2" class="carousel-img active">
+        <img src="media/tokyo-city3.jpg" alt="Tokyo City 3" class="carousel-img">
+        <img src="media/tokyo-city4.jpg" alt="Tokyo City 4" class="carousel-img">
         <div class="carousel-dots"></div>
       </div>
       <div class="section-text">
@@ -146,10 +154,10 @@
         </p>
       </div>
       <div class="carousel">
-        <img src="landscape2.jpg" alt="Scenic Landscape 2" class="carousel-img active">
-        <img src="landscape3.jpg" alt="Scenic Landscape 3" class="carousel-img">
-        <img src="landscape4.jpg" alt="Scenic Landscape 4" class="carousel-img">
-        <img src="landscape5.jpg" alt="Scenic Landscape 5" class="carousel-img">
+        <img src="media/landscape2.jpg" alt="Scenic Landscape 2" class="carousel-img active">
+        <img src="media/landscape3.jpg" alt="Scenic Landscape 3" class="carousel-img">
+        <img src="media/landscape4.jpg" alt="Scenic Landscape 4" class="carousel-img">
+        <img src="media/landscape5.jpg" alt="Scenic Landscape 5" class="carousel-img">
         <div class="carousel-dots"></div>
       </div>
     </div> 
@@ -170,7 +178,7 @@
     items.forEach(item => observer.observe(item));
   </script>
 
-   <!-- JavaScript for Carousel Dots -->
+   <!-- JavaScript for Carousel and Carousel Dots -->
     <script>
     document.querySelectorAll('.carousel').forEach(carousel => {
       const images = Array.from(carousel.querySelectorAll('.carousel-img'));
@@ -200,8 +208,8 @@
       const intervalTime = 3000;
 
       function goToSlide(index) {
-        if (index === current) return;
-        images[current].classList.remove('active');
+        if (index === current) return; 
+        images[current].classList.remove('active'); 
         dot[current].classList.remove('active');
         current = index;
         images[current].classList.add('active');
@@ -224,6 +232,24 @@
       carousel.addEventListener('mouseleave', () => resetInterval());
     });
 </script>
+
+  <!-- Music -->
+   <audio id="bg-audio" controls class="audio-player">
+                <source src="media/Beautiful Japanese Music  Cherry Blossoms.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+  <!-- Reveal Script -->
+    <script>
+       // set initial audio volume and unmute
+       const audio = document.getElementById('bg-audio');
+       audio.volume = 0.3; // 30% volume (0 to 1)
+       audio.muted = false;
+       audio.play().catch(() => {
+                // autoplay may be blocked - user interaction required
+                console.log('Autoplay blocked by browser');
+            });
+     </script>
 
   <!-- Footer -->
   <footer class="site-footer">
