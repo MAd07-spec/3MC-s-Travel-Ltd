@@ -24,4 +24,3 @@ function moveCarousel() {
 }
 
 setInterval(moveCarousel, delay);
-

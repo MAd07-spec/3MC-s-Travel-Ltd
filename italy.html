@@ -23,30 +23,30 @@
         <!--"Carousel"-->
         <div class="carousel">
             <div class="carousel-track">
-                <img src="carousel1.jpg" alt="Rome"/>
-                <img src="carousel2.jpg" alt="Milan"/>
-                <img src="carousel3.jpg" alt="Grosseto"/>
+                <img src="italyMedia/carousel1.jpg" alt="Rome"/>
+                <img src="italyMedia/carousel2.jpg" alt="Milan"/>
+                <img src="italyMedia/carousel3.jpg" alt="Grosseto"/>
             </div>
         </div>
 
         <!--"Introductory"-->
         <div class="introduction">
             <h2> Historical Sites </h2>
-                <img src="historical.jpg" alt="Colosseum"/>
+                <img src="italyMedia/historical.jpg" alt="Colosseum"/>
                 <p>
                     Italy is home to many buildings and sites, dating back to
                     many centuries ago, such as the Colosseum, the Leaning Tower
                     of Pisa, Duomo di Milano and much more.
                 </p>
             <h2> Fashion </h2>
-                <img src="fashion.jpg" alt="Fashion"/>
+                <img src="italyMedia/fashion.jpg" alt="Fashion"/>
                 <p>
                     Immerse yourself in the prosperous fashion industry of
                     Italy, home to many well known luxury brands such as Gucci,
                     Giorgio Armani, Versace and many more.
                 </p>
             <h2> Food </h2>
-                <img src="food.jpg" alt="Food"/>
+                <img src="italyMedia/food.jpg" alt="Food"/>
                 <p>
                     One of the world's most popular and intricate cuisines can
                     be found in Italy. Come along and explore the origin of your
@@ -56,7 +56,7 @@
                 <!--"Video Part"-->
                 <div class="video">
                     <video controls>
-                        <source src="italy.mp4" type="video/mp4"/>
+                        <source src="italyMedia/italy.mp4" type="video/mp4"/>
                      </video>
                 </div>
         </div>
@@ -64,15 +64,15 @@
         <!--"Locations Selector"-->
         <div class="selector">
             <a href="#rome">
-                <img src="rome.jpg" alt="Rome">
+                <img src="italyMedia/rome.jpg" alt="Rome">
                 <h4> Rome <h4>
             </a>
             <a href="#milan">
-                <img src="milan.jpg" alt="Milan">
+                <img src="italyMedia/milan.jpg" alt="Milan">
                 <h4> Milan </h4>
             </a>
             <a href="#grosseto">
-                <img src="grosseto.jpg" alt="Grosseto">
+                <img src="italyMedia/grosseto.jpg" alt="Grosseto">
                 <h4> Grosseto </h4>
             </a>
         </div>
@@ -80,7 +80,7 @@
         <!--"Locations Section"-->
         <div class="locations">
             <h3 id="rome"> Rome </h3>
-                <img src="rome.jpg" alt="Rome">
+                <img src="italyMedia/rome.jpg" alt="Rome">
                 <p> 
                     The capital city of Italy, and its tourism central. The
                     Colosseum, one of the seven world wonders, can be found here
@@ -90,7 +90,7 @@
                     of Italian Cuisine
                 </p>
             <h3 id="milan"> Milan </h3>
-                <img src="milan.jpg" alt="Milan">
+                <img src="italyMedia/milan.jpg" alt="Milan">
                 <p>
                     The fashion capital of Italy. Alongside its many historical
                     sites, such as the Milan Cathedral and the Sforza Castle, it
@@ -99,7 +99,7 @@
                     Italian brands such as Gucci, Versace and Diesel.
                 </p>
             <h3 id="grosseto"> Grosseto </h3>
-                <img src="grosseto.jpg" alt="Grosseto">
+                <img src="italyMedia/grosseto.jpg" alt="Grosseto">
                 <p>
                     Stationed in the region of Tuscany, Grosseto is a small
                     coastal city with a rich history. It is home to the San
@@ -114,11 +114,13 @@
         </div>
         <!--"Audio"-->
         <div class="audio">
-            <audio autoplay controls>
-                <source src="godfather.mp3" type="audio/mpeg">
+            <audio id="godfather" autoplay muted loop controls>
+                <source src="italyMedia/godfather.mp3" type="audio/mpeg">
                 Unsupported audio tag.
             </audio>
+            <button class="mute-button"></button>
         </div>
+
         <!--"JS for Carousel"-->
         <script src="italy.js"></script>
     </body>
