@@ -1,28 +1,25 @@
 //Carousel Auto-scroll thingymajig
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
-
-let index = 0;
+let i = 0;
 const slideCount = slides.length;
-const delay = 3000; // 3 seconds
+const delay = 3000;
 
 function moveCarousel() {
-    index++;
+    i++;
 
-    // If we reach the end, jump back to start instantly
-    if (index >= slideCount) {
-        // Turn OFF animation to snap back
+    if (i >= slideCount) {
         track.style.transition = "none";
         track.style.transform = "translateX(0%)";
         
-        index = 1; // Go to the second slide next
+        i = 1;
         setTimeout(() => {
             track.style.transition = "transform 0.6s ease-in-out";
-            track.style.transform = `translateX(-${index * 100}%)`;
-        }, 20); // Small delay allows browser to apply "no transition"
+            track.style.transform = `translateX(-${i * 100}%)`;
+        }, 20);
     } else {
         track.style.transition = "transform 0.6s ease-in-out";
-        track.style.transform = `translateX(-${index * 100}%)`;
+        track.style.transform = `translateX(-${i * 100}%)`;
     }
 }
 
